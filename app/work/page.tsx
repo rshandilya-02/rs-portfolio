@@ -52,17 +52,17 @@ export default function Work() {
   const [activeProject, setActiveProject] = useState<any | null>(null);
 
   return (
-    <div className="flex justify-center noise2 min-h-screen w-full overflow-y-hidden">
+    <div className="flex justify-center  min-h-screen w-full bg-black/60">
 
       {/* MAIN CONTAINER */}
-      <div className="mt-16 w-[1050px] min-h-[600px] rounded-[28px] 
+      <div className="mt-16 w-[1050px] min-h-screen  rounded-[28px] 
       bg-[linear-gradient(145deg,#ead7c2,#d9c3ab)] 
       shadow-[0_25px_60px_rgba(0,0,0,0.25)] 
-      border border-black/20 relative overflow-hidden p-16">
+      border border-black/20 relative  p-16">
 
         {/* GRID */}
         <div
-          className="absolute inset-0 opacity-30 pointer-events-none"
+          className="absolute inset-0 opacity-30 pointer-events-none min-h-full"
           style={{
             backgroundImage: `
               linear-gradient(#b8a999 1px, transparent 1px),
@@ -73,7 +73,7 @@ export default function Work() {
         />
 
         {/* CENTER LINE */}
-        <div className="absolute left-1/2 top-0 h-full w-[3px] bg-black/30 -translate-x-1/2 pointer-events-none" />
+        <div className="absolute left-1/2 top-0 min-h-full w-[3px] bg-black/30 -translate-x-1/2 pointer-events-none" />
 
         <h1 className="text-4xl font-serif text-[#d94b3d] mb-16 relative z-10">
           My Work
