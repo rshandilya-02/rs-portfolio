@@ -1,4 +1,4 @@
-export default function ProjectCard({ proj }) {
+export default function ProjectCard({ proj }:{proj:any}) {
   return (
     <div
       className="relative bg-[#fff8dc] p-5 w-[260px] 
