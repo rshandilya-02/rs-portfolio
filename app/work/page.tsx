@@ -52,7 +52,7 @@ export default function Work() {
   const [activeProject, setActiveProject] = useState<any | null>(null);
 
   return (
-    <div className="flex justify-center  min-h-screen w-full bg-black/60">
+    <div className="flex justify-center  min-h-screen w-full bg-blue-400/60 z-1">
 
       {/* MAIN CONTAINER */}
       <div className="mt-16 w-[1050px] min-h-screen  rounded-[28px] 

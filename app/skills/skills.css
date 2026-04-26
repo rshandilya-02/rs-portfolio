@@ -1,0 +1,95 @@
+.brochure-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #bfb8b0;
+  padding: 20px;
+}
+
+/* Desktop brochure */
+.brochure {
+  display: flex;
+  width: 1100px;
+  height: 260px;
+  perspective: 2000px;
+}
+
+/* Pages */
+.page {
+  width: calc(100% / 7);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+/* Page styles */
+.page1 {
+  transform: rotateY(-30deg);
+  background: linear-gradient(#7A302B, #A74131);
+  color: white;
+}
+
+.page2 { transform: rotateY(30deg); background: #f5f2ee; }
+.page3 { transform: rotateY(-30deg); background: #eae7df; }
+.page4 { transform: rotateY(30deg); background: #f5f2ee; }
+.page5 { transform: rotateY(-30deg); background: #eae7df; }
+.page6 { transform: rotateY(30deg); background: #f5f2ee; }
+
+.pageLast {
+  transform: rotateY(30deg);
+  background: linear-gradient(#C46041, #FF8059);
+  color: white;
+}
+
+/* Titles */
+.title {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Icons */
+.icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  gap: 4px;
+}
+
+/* Hover open */
+.brochure:hover .page {
+  transform: rotateY(0deg);
+}
+
+/* 🔥 MOBILE = vertical brochure */
+@media (max-width: 768px) {
+  .brochure {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    perspective: none;
+  }
+
+  .page {
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    margin-bottom: 12px;
+    border-radius: 12px;
+  }
+
+  .icons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

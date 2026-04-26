@@ -11,7 +11,7 @@ export default function Home() {
       <div className="hero-section flex justify-center mt-16">
         <div className="p-[6px] rounded-[32px] bg-[#d4bfa8] shadow-[0_10px_20px_rgba(0,0,0,0.2)]">
 
-          <div className="w-[1050px] h-[520px] rounded-[28px] bg-[linear-gradient(145deg,#ead7c2,#d9c3ab)] shadow-[0_25px_60px_rgba(0,0,0,0.25)] border border-black/30 relative">
+          <div className="w-full max-w-[1050px] min-h-[520px] rounded-[28px] bg-[linear-gradient(145deg,#ead7c2,#d9c3ab)] shadow-[0_25px_60px_rgba(0,0,0,0.25)] border border-black/30 relative">
 
             {/* PAPER + GRID */}
             <div className="absolute inset-0 rounded-[24px] shadow-[inset_0_0_40px_rgba(0,0,0,0.15)] pointer-events-none">
@@ -41,10 +41,10 @@ export default function Home() {
             </div>
 
             {/* CONTENT */}
-            <div className="relative z-10 flex h-full px-16">
+            <div className="relative z-10 flex flex-col md:flex-row h-full px-6 md:px-16">
 
               {/* LEFT */}
-             <div className="flex flex-col justify-center w-[55%] text-[#d94b3d] pr-6">
+             <div className="flex flex-col justify-center w-full md:w-[55%] text-[#d94b3d] pr-6">
 
   <p className="text-2xl text-black mb-2 font-medium">
     Rishabh Shandilya
@@ -91,10 +91,10 @@ export default function Home() {
               <div className="absolute left-0 top-0 w-1/2 h-full bg-white/5 pointer-events-none" />
               <div className="absolute right-0 top-0 w-1/2 h-full bg-black/5 pointer-events-none" />
 
-              {/* RIGHT */}
-              <div className="relative w-[45%] flex justify-center">
+              {/* RIGHT */}c
+              <div className="relative w-full md:w-[45%] flex justify-center mt-10 md:mt-0">
 
-                <div className="absolute top-[55px] right-[120px] flex flex-col items-center animate-swing origin-top">
+                <div className="relative md:absolute top-[20px] md:top-[55px] right-0 md:right-[120px] flex flex-col items-center animate-swing origin-top">
 
                   <div className="w-[2px] h-[80px] bg-black/40" />
 
@@ -123,7 +123,7 @@ export default function Home() {
      <div className="mt-24 w-full flex justify-center pb-16 ">
 
   {/* BASE PAPER */}
-  <div className="w-[900px] bg-[#fff8dc] rounded-[20px] shadow-[0_15px_40px_rgba(0,0,0,0.25)] border border-black/20 relative p-10">
+  <div className="w-full max-w-[900px] bg-[#fff8dc] rounded-[20px] shadow-[0_15px_40px_rgba(0,0,0,0.25)] border border-black/20 relative p-10">
 
     {/* GRID */}
     <div
@@ -145,8 +145,7 @@ export default function Home() {
       </p>
 
       {/* ICON LINKS */}
-      <div className="flex gap-10 items-center ">
-
+     <div className="flex flex-wrap gap-6 justify-center items-center">
         {/* LINKEDIN */}
         <a
           href="https://www.linkedin.com/in/rishabh-shandilya-a261b1258/"

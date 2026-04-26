@@ -120,3 +120,74 @@ svg {
 .animate-fadeIn {
   animation: fadeIn 0.2s ease-out;
 }
+
+.brochure-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to left bottom, #F2E3C6, #A7A1A5);
+}
+
+.brochure {
+  display: flex;
+  width: 1200px;
+  height: 260px;
+  perspective: 2000px;
+}
+
+/* Shared page styles */
+.page {
+  width: calc(100% / 6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+/* Individual pages */
+.page1 {
+  transform: rotateY(-30deg);
+  background: linear-gradient(to right, #7A302B, #A74131);
+  color: white;
+}
+
+.page2 {
+  transform: rotateY(30deg);
+  background: linear-gradient(to top, #F8EBE3, #FFFFFF);
+}
+
+.page3 {
+  transform: rotateY(-30deg);
+  background: #F3F1E5;
+}
+
+.page4 {
+  transform: rotateY(30deg);
+  background: linear-gradient(to top, #F8EBE3, #FFFFFF);
+}
+
+.page5 {
+  transform: rotateY(-30deg);
+  background: #F3F1E5;
+}
+
+.page6 {
+  transform: rotateY(30deg);
+  background: linear-gradient(to right, #C46041, #FF8059);
+  color: white;
+}
+
+/* Icons grid */
+.icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* Hover effect (🔥 important) */
+.brochure:hover .page {
+  transform: rotateY(0deg);
+}
